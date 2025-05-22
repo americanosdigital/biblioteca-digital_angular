@@ -17,9 +17,6 @@
       <thead>
         <tr>
           <th class="py-2 px-4 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-700">
-            ID
-          </th>
-          <th class="py-2 px-4 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-700">
             Titulo
           </th>
           <th class="py-2 px-4 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-700">
@@ -37,8 +34,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let livro of livrosFiltrados">
-          <td class="py-2 px-4 border-b border-gray-200">{{ livro.id }}</td>
+        <tr *ngFor="let livro of livrosFiltrados">          
           <td class="py-2 px-4 border-b border-gray-200">{{ livro.titulo | uppercase }}</td>
           <td class="py-2 px-4 border-b border-gray-200">{{ livro.autor }}</td>
           <td class="py-2 px-4 border-b border-gray-200">{{ livro.ano }}</td>

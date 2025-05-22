@@ -41,10 +41,10 @@ export class FormularioComponent {
   salvar() {
     if (this.isEditando) {
       this.http.put(`http://localhost:3000/livros/${this.idLivro}`, this.livro)
-        .subscribe(() => this.router.navigate(['/livros']));
+        .subscribe(() => this.router.navigate(['/listagem']));
     } else {
       this.http.post('http://localhost:3000/livros', this.livro)
-        .subscribe(() => this.router.navigate(['/livros']));
+        .subscribe(() => this.router.navigate(['/listagem']));
     }
   }
 }
